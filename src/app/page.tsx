@@ -113,46 +113,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my work
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  A few projects I’m proud of.
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
-  <section id="hackathons">
+      {/* Projects section commented out */}
+      
       {/* Connect on LinkedIn section (at end of page) */}
       <section id="connect-linkedin">
         <div className="flex flex-col items-center w-full pt-1 pb-0 gap-1">
@@ -174,12 +136,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-        <div className="space-y-12 w-full py-12">
-          {/* Hackathons section removed since DATA.hackathons no longer exists */}
-          {/* Hackathon list removed since DATA.hackathons no longer exists */}
-        </div>
-      </section>
-  {/* Contact section removed as requested */}
+      {/* Contact section removed as requested */}
     </main>
   );
 }
