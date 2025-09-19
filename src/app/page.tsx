@@ -118,8 +118,8 @@ export default function Page() {
       {/* Connect on LinkedIn section (at end of page) */}
       <section id="connect-linkedin">
         <div className="flex flex-col items-center w-full pt-1 pb-0 gap-1">
-          {/* White pill-shaped element (24x8px) */}
-          <div className="rounded-full bg-white mb-4" style={{ width: '24px', height: '8px' }} />
+          {/* Pill-shaped element (24x8px) - black in light mode, white in dark mode */}
+          <div className="rounded-full bg-black dark:bg-white mb-4" style={{ width: '24px', height: '8px' }} />
           <div className="flex items-center gap-2 text-muted-foreground text-xl">
             <span>connect on</span>
             <Link
